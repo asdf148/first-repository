@@ -1,0 +1,183 @@
+﻿<Window x:Class="계산기.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:계산기"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="550">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="result"
+               Content="0"
+               FontSize="80"
+               Grid.ColumnSpan="5"
+               HorizontalAlignment="Right"
+               VerticalAlignment="top"
+               />
+        
+        <Label x:Name="write"
+               Content= "0"
+               FontSize="80"
+               Grid.Row="1"
+               Grid.ColumnSpan="3"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Top"
+               />
+        <Button x:Name="remove"
+               Content="&lt;-"
+               FontSize="60"
+               Grid.Row="1"
+               Grid.Column="4"
+               Click="remove_Click"
+               Background="Aqua"
+                BorderBrush="White"
+               />
+        <Button x:Name="equal"
+               Content="="
+               FontSize="60"
+               Grid.Row="5"
+               Grid.Column="2"
+                Click="equal_Click"
+                Background="Lavender"
+                BorderBrush="White"
+               />
+
+        <Button x:Name="Multiplication"
+               Content="x"
+               FontSize="60"
+               Grid.Row="2"
+               Grid.Column="4"
+               Click="Multiplication_Click"
+                Background="Aqua"
+                BorderBrush="White"
+               />
+        <Button x:Name="Divide"
+               Content="÷"
+               FontSize="60"
+               Grid.Row="3"
+               Grid.Column="4"
+               Click="Divide_Click"
+                Background="Aqua"
+                BorderBrush="White"
+               />
+        <Button x:Name="minus"
+               Content="-"
+               FontSize="60"
+               Grid.Row="4"
+               Grid.Column="4"
+               Click="minus_Click"
+                Background="Aqua"
+                BorderBrush="White"
+               />
+        <Button x:Name="plus"
+               Content="+"
+               FontSize="60"
+               Grid.Row="5"
+               Grid.Column="4"
+               Click="plus_Click"
+                Background="Aqua"
+                BorderBrush="White"
+               />
+
+        <Button x:Name="one"
+               Content="1"
+               FontSize="60"
+               Grid.Row="4"
+               Grid.Column="0"
+                Click="one_Click"
+                BorderBrush="White"
+               />
+        <Button x:Name="two"
+               Content="2"
+               FontSize="60"
+               Grid.Row="4"
+               Grid.Column="1"
+               Click="two_Click"
+                BorderBrush="White"
+               />
+        <Button x:Name="three"
+               Content="3"
+               FontSize="60"
+               Grid.Row="4"
+               Grid.Column="2"
+                Click="three_Click"
+                BorderBrush="White"
+               />
+
+        <Button x:Name="four"
+               Content="4"
+               FontSize="60"
+               Grid.Row="3"
+               Grid.Column="0"
+                Click="four_Click"
+                BorderBrush="White"
+               />
+        <Button x:Name="five"
+               Content="5"
+               FontSize="60"
+               Grid.Row="3"
+               Grid.Column="1"
+                Click="five_Click"
+                BorderBrush="White"
+               />
+        <Button x:Name="six"
+               Content="6"
+               FontSize="60"
+               Grid.Row="3"
+               Grid.Column="2"
+               Click="six_Click"
+                BorderBrush="White"
+               />
+
+        <Button x:Name="seven"
+               Content="7"
+               FontSize="60"
+               Grid.Row="2"
+               Grid.Column="0"
+                Click="seven_Click"
+                BorderBrush="White"
+               />
+        <Button x:Name="eight"
+               Content="8"
+               FontSize="60"
+               Grid.Row="2"
+               Grid.Column="1"
+               Click="eight_Click"
+                BorderBrush="White"
+               />
+        <Button x:Name="nine"
+               Content="9"
+               FontSize="60"
+               Grid.Row="2"
+               Grid.Column="2"
+               Click="nine_Click"
+                BorderBrush="White"
+               />
+
+        <Button x:Name="zero"
+               Content="0"
+               FontSize="60"
+               Grid.Row="5"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"
+                Click="zero_Click"
+                BorderBrush="White"
+               />
+
+    </Grid>
+</Window>
